@@ -1,7 +1,7 @@
 class Solution {
 
-public static int INT_MIN_VAL = -2147483648;
-public static int INT_MAX_VAL = 2147483647;
+public static int INT_MIN_VAL = Integer.MIN_VALUE;
+public static int INT_MAX_VAL = Integer.MAX_VALUE;
 
 public int helper(String s, int i, long num, int sign){
 if( i >= s.length() || !Character.isDigit(s.charAt(i))){
