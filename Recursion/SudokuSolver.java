@@ -1,3 +1,6 @@
+//Time complexity - O(9^81)
+//Space complexity - O(81)
+
 class Solution {
     public boolean isSafe(char[][] board, int row, int col, char digit){
         for(int i=0;i<9; i++){
