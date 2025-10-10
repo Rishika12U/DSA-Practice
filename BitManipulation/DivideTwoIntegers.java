@@ -5,11 +5,9 @@ class Solution {
 
         if(dividend < 0 && divisor >= 0) sign = false;
         if(dividend >= 0 && divisor < 0) sign = false;
-        if (dividend == Integer.MIN_VALUE && divisor == -1 ) return Integer.MAX_VALUE;
-  
+       
        long n = Math.abs((long)dividend);
        long d = Math.abs((long)divisor);
-       long sum = 0;
        long ans = 0;
        
      while(n >= d){
@@ -26,6 +24,6 @@ class Solution {
 }
 
 
-     return  sign == true? (int)ans:-1*(int)ans;
+     return  sign ? (int)ans:-1*(int)ans;
     }
 }
